@@ -14,6 +14,8 @@ describe('webdriver func', () => {
 
     //get request for link
     await driver.get('https://google.com')
+
+    //get title
     title = await driver.getTitle()
   })
 
