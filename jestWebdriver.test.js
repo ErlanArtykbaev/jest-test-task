@@ -14,12 +14,11 @@ describe('webdriver func', () => {
 
     //get request for link
     await driver.get('https://google.com')
+    title = await driver.getTitle()
   })
 
   //this title must mutch Google
-  test('testing to google', async() => {
-    //geting tiitle from site we got
-    title = await driver.getTitle()
+  test('testing to google',() => {
 
     //matching got title with what it should be
     expect(title).toBe('Google')
